@@ -1,0 +1,349 @@
+
+@font-face{
+    font-family: Poppins;
+    src: url(../Fonte/Poppins-Medium.ttf);
+}
+
+body, nav ul, li, a, button, p, h1{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-family: Poppins;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EA5905;
+}
+
+nav ul{
+    display: flex;
+}
+
+.box{
+    margin: 0 20px;
+}
+
+#logo{
+    height: 96px;
+    padding-left: 20px;
+}
+
+.slider{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content{
+    display: flex;
+    width: 400%;
+    height: auto;
+}
+.slider-content input{
+    display: none;
+}
+.slide-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img{
+    width: 100%;
+    height: 400px
+}
+
+.nav-manual, .nav-auto, .nav-auto section{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    margin-top: 29%;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    border: 1px solid #EA5905;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.nav-manual .manual-btn:hover{
+    background-color: #EA5905;
+}
+
+#radio1:checked~ .primeira{
+    margin-left: 0%;
+}
+
+#radio2:checked~ .primeira{
+    margin-left: -25%;
+}
+
+#radio3:checked~ .primeira{
+    margin-left: -50%;
+}
+
+#radio4:checked~ .primeira{
+    margin-left: -75%;
+}
+
+.banner1{
+    margin: 50px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.foto_banner1{
+    display: flex;
+    justify-content: flex-end;
+}
+.foto_banner1 img{
+    height: 300px;
+    
+}
+
+.texto1 {
+    padding-left: 10%;
+    text-align: center;
+}
+.texto1 h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.texto1 p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+
+.banner2{
+    display: flex;
+    margin: 20px 0 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.texto2{
+    padding-right: 10%;
+    text-align: center;
+}
+
+.texto2 h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.texto2 p{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.foto_banner2{
+    display: flex;
+    justify-content: flex-end;
+}
+.foto_banner2 img{
+    height: 300px;
+}
+
+.bannerBtn{
+    display: inline-block;
+    padding: 10px;
+    background-color: bisque;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.bannerBtn:hover{
+    background-color: #EA5905;
+}
+
+#titulo_prod h1{
+    display: flex;
+    justify-content: center;
+    color: #EA5905;
+    font-size: 30px;
+    padding-top: 35px;
+    
+}
+
+#Produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+#Produtos img{
+    height: 250px;
+    padding-top: 35px;
+}
+
+#Produtos p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.icon{
+    position: fixed;
+    bottom: 150px;
+    right: 10px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px #c0bdbd;
+}
+
+.icon:hover{
+    background-color: #fff;
+    color: #029e3b;
+}
+
+
+#Sobre h1{
+    display: flex;
+    justify-content: center;
+    color: #EA5905;
+    font-size: 30px;
+    padding-top: 35px;
+    
+}
+
+#Sobre p{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    padding: 0 70px;
+    
+}
+
+.mvv{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+.coluna{
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna h1 {
+    color: #EA5905;
+    font-size: 30px;
+    padding-top: 35px;
+}
+
+.coluna p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+
+    header {
+        flex-direction: column; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    #logo{
+        padding: 0;
+        justify-content: center;
+    }
+    .nav-manual, .nav-auto, .nav-auto section{
+        margin-top: 370px;
+    }
+    .banner1{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto1{
+        padding: 0;
+        font-size: 1em;
+    }
+    .banner2{
+        display: flex;
+        flex-direction: column;
+    }
+    .texto2{
+        padding: 0;
+        font-size: 5px;
+    }
+    .bannerBtn{
+        margin-bottom: 10px;
+    }
+    #Produtos{
+       padding: 0;
+       justify-content: center;
+    }
+    .mvv{
+        display: flex;
+        flex-direction: column;
+    }
+    .mvv h1{
+        text-align: center;
+    }
+}
+
+@media (max-width: 770px) {
+
+    nav ul {
+     padding: 20px;
+    }
+    .nav-manual, .nav-auto, .nav-auto section{
+        margin-top: 370px;
+    }
+    .texto1{
+        padding: 0;
+        
+    }
+    .texto2{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .bannerBtn{
+        margin-bottom: 10px;
+    }
+    .mvv{
+        display: flex;
+        flex-direction: column;
+    }
+    .mvv h1{
+        text-align: center;
+    }
+}
