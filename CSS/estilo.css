@@ -350,7 +350,7 @@ nav ul{
     }
     .texto2{
         padding: 0;
-        font-size: 5px;
+        font-size: 1em;
     }
     #Produtos, .bannerBtn {
         padding-right: 70px;
@@ -358,6 +358,9 @@ nav ul{
     #Produtos{
         justify-content: center;
         padding-left: 30px;
+    }
+    #Produtos p{
+        padding-left: 50px;
     }
     .bannerBtn{
         padding: 10px;
